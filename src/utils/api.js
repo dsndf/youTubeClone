@@ -18,7 +18,7 @@ const options = {
 
 
 export const fetchData = async (url) => {
-  console.log(process.env.YOU_TUBE_API)
+  
     const { data } = await axios.get(`https://youtube138.p.rapidapi.com/${url}`, options);
      return data;
 }
