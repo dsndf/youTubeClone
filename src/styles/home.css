@@ -1,0 +1,100 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #003ea5;
+  font-size: 17px;
+  color: #fff;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+h1 {
+  margin: 20px 0;
+  width: 32%;
+  font-size: 55px;
+  /* text-align: justify; */
+  animation-name: slide;
+  animation-timing-function: ease-out;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: 2;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(100px);
+  }
+}
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+.hero .home-img {
+  height: 500px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.hero .home-img .card {
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.5s;
+  margin: 0 2px;
+}
+.hero .home-img .card img {
+  width: 200%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  filter: grayscale(1);
+}
+.hero .home-img .card img:hover {
+  filter: none;
+}
+.hero .home-img .card:hover {
+  flex: 5;
+}
+
+.card {
+  width: 450px;
+  border-radius: 4px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+  font-weight: 300;
+  box-shadow: 0 5px 15px #e4e4e4;
+}
+.card > div:first-child {
+  width: 100%;
+  height: 70%;
+}
+.card > div:first-child img {
+  width: 100%;
+  height: 100%;
+}
+.card > div:last-child {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+.card > div:last-child h3, .card > div:last-child h2 {
+  font-weight: 500;
+  font-size: 20px;
+}
+.card > div:last-child h2 {
+  font-size: 26px;
+}/*# sourceMappingURL=home.css.map */
