@@ -1,5 +1,5 @@
 import axios from 'axios'
-const Base_url = 'https://youtube138.p.rapidapi.com';
+
  
 
 const options = {
@@ -18,7 +18,7 @@ const options = {
 
 
 export const fetchData = async (url) => {
-  console.log(process.env.YOU_TUBE_API)
-    const { data } = await axios.get(`https://youtube138.p.rapidapi.com/${url}`, options);
+  console.log(process.env.YOU_TUBE_API) 
+    const { data } = await axios.get(`${process.env.REACT_APP_BASE_URL}/${url}`, options);
      return data;
 }
