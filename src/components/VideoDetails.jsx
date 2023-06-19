@@ -44,7 +44,7 @@ const VideoDetails = () => {
       className=" dark:bg-black   lg:h-[calc(100vh-55px)] h-auto   "
     >
       <div className="  flex flex-col gap-13  h-auto justify-between items-center py-2    lg:flex-row lg:justify-center">
-        <div className=" flex flex-col w-[100%]  h-[full] md:h-[400px] lg:h-[450px]  xl:h-[500px] lg:w-[550px] xl:w-[700px]">
+        <div className=" flex flex-col w-[100%]  h-[200px] md:h-[400px] lg:h-[450px]  xl:h-[500px] lg:w-[550px] xl:w-[700px]">
           <ReactPlayer
             url={`https://www.youtube.com/watch?v=${id}`}
             height={"100%"}
