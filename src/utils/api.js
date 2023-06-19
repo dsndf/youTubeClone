@@ -18,7 +18,8 @@ const options = {
 
 
 export const fetchData = async (url) => {
-  console.log(process.env.YOU_TUBE_API) 
+
     const { data } = await axios.get(`${process.env.REACT_APP_BASE_URL}/${url}`, options);
+
      return data;
 }
