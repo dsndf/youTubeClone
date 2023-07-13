@@ -26,7 +26,7 @@ const Header = () => {
 
   console.log("page is", page);
   return (
-    <div className="group flex items-center  dark:hover:bg-[#131313] transition-all duration-500  justify-between p-4 py-[30px] dark:bg-black h-[55px] ">
+    <div className="group flex items-center  bg-[#e8e8e8] dark:hover:bg-[#131313] transition-all duration-500  justify-between p-4 py-[30px] dark:bg-black h-[55px] ">
       <div className="flex justify-between items-center gap-2 ">
         {condition1 && (
           <AiOutlineMenu
@@ -50,25 +50,25 @@ const Header = () => {
       </div>
 
       <div className="flex relative   ">
-        <MdSearch className="text-white absolute top-2 left-2.5 text-[20px]" />
+        <MdSearch className="dark:text-white text-black  absolute top-2 left-2.5 text-[20px]" />
         <input
           type="text"
           value={keyword}
           onChange={(e) => setKeyword(e.target.value)}
           className="border-2 border-[#565656]  focus:border-blue-800  dark:bg-[black] dark:text-white  outline-none transition-all duration-150  rounded-l-full p-[5px] pl-10  w-[150px] sm:w-[250px]  md:w-[350px] lg:w-[500px]"
         />
-        <span className="  dark:bg-[#222222] dark:border-none  border-2 border-[#222222] border-l-0 flex justify-center items-center rounded-r-full w-12">
+        <span className=" bg-white  dark:bg-[#222222] dark:border-none  border-2 border-[#222222] border-l-0 flex justify-center items-center rounded-r-full w-12">
           <MdSearch
-            className="dark:text-white   text-[20px]  "
+            className="dark:text-white      text-[20px]  "
             onClick={searchFunc}
           />
         </span>
       </div>
-      <div className=" h-8 flex justify-center items-center">
+      <div className=" h-8 flex justify-center  items-center">
         <TbVideoPlus className="dark:text-white mr-6 text-[23px]  hidden sm:block "></TbVideoPlus>
         <BiBell className="dark:text-white mr-6 text-[23px]  hidden sm:block  " />
         <BsFillMoonFill
-          className=" mr-6 dark:text-white text-[21px]  "
+          className=" mr-3  dark:text-white text-[21px] sm:mr-6  "
           onClick={() => {
             if (mode === "Dark") {
               setMode("Light");
